@@ -6,6 +6,16 @@ export async function generateMetadata({params}){
         title:`Blogs ${blog}`,
     }
 }
+export const dynamicParams = false;
+export function generateStaticParams(){
+        return [
+            {blog : '1'},
+            {blog : '2'},
+            {blog : '3'},
+            {blog : '4'},
+            {blog : '5'},
+        ]
+    }
 export default async function blog({params}){
     const {blog} = await params;
     if(!/^\d+$/.test(blog)){

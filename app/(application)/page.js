@@ -1,9 +1,11 @@
 import Link from "next/link";
+import ComponentPage from "../_components/test";
 
 export default function Home() {
   return(
     <>
-    <h1>Hello World</h1>
+    <h1 className="text-center">Business Knowledge</h1>
+    <ComponentPage />
     <Link href="/about">About</Link>
     <br />
     <Link href="/services">Services</Link>

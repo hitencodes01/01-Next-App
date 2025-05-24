@@ -3,6 +3,7 @@ export const metadata = {
   title : "Services"
 }
 export default function Services() {
+  console.log("services page")
   return(
     <>
     <h1>Escort Services</h1>
