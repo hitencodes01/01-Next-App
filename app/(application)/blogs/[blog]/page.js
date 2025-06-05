@@ -3,7 +3,6 @@ import Likes from "../../../../components/Likes";
 import Views from "../../../../components/Views";
 import Comments from "../../../../components/Comments";
 import { Suspense , fallback} from "react";
-import Loading from "../../../../components/Loading";
 
 export async function generateMetadata({params}){
     const {blog} = await params;
